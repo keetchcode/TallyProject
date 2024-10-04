@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MwC-R3-5xc">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="rHT-9O-pxT">
+            <objects>
+                <viewController id="mCo-RK-ODL" customClass="SettingsViewController" customModule="TallyProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Uw-YQ-BeD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="2wQ-bG-RxW">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNU-k5-zru">
+                                        <rect key="frame" x="76.666666666666686" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Please enter a number to count by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPJ-6F-QYB">
+                                        <rect key="frame" x="66" y="187" width="261" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="9ks-xn-P1P">
+                                        <rect key="frame" x="179.66666666666666" y="266.33333333333331" width="34" height="163.33333333333331"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfB-AR-ks2">
+                                        <rect key="frame" x="117.33333333333333" y="488.66666666666663" width="158.33333333333337" height="34.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Set custom count">
+                                            <color key="baseBackgroundColor" name="AccentColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="setCustomCountButton:" destination="mCo-RK-ODL" eventType="touchUpInside" id="BaH-fo-c1E"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WTh-c4-l7q">
+                                        <rect key="frame" x="76.666666666666686" y="582" width="240" height="128"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="tintColor" name="AccentColor"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="D7y-Qj-hFZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2wQ-bG-RxW" firstAttribute="leading" secondItem="D7y-Qj-hFZ" secondAttribute="leading" id="DfD-5b-4GI"/>
+                            <constraint firstItem="2wQ-bG-RxW" firstAttribute="top" secondItem="D7y-Qj-hFZ" secondAttribute="top" id="E8z-CN-YUy"/>
+                            <constraint firstItem="2wQ-bG-RxW" firstAttribute="top" secondItem="D7y-Qj-hFZ" secondAttribute="top" id="KCt-SO-Sff"/>
+                            <constraint firstItem="D7y-Qj-hFZ" firstAttribute="trailing" secondItem="2wQ-bG-RxW" secondAttribute="trailing" id="NKG-z4-G14"/>
+                            <constraint firstItem="D7y-Qj-hFZ" firstAttribute="bottom" secondItem="2wQ-bG-RxW" secondAttribute="bottom" id="QN5-Gg-fha"/>
+                            <constraint firstItem="D7y-Qj-hFZ" firstAttribute="trailing" secondItem="2wQ-bG-RxW" secondAttribute="trailing" id="VDR-IG-G0d"/>
+                            <constraint firstItem="D7y-Qj-hFZ" firstAttribute="bottom" secondItem="2wQ-bG-RxW" secondAttribute="bottom" id="Xqy-in-SIF"/>
+                            <constraint firstItem="2wQ-bG-RxW" firstAttribute="leading" secondItem="D7y-Qj-hFZ" secondAttribute="leading" id="dQd-i3-3fZ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape.fill" catalog="system" id="NxG-t1-F3h"/>
+                    <connections>
+                        <outlet property="customCountTextField" destination="9ks-xn-P1P" id="f5s-cx-ipr"/>
+                        <outlet property="instructionLabel" destination="qPJ-6F-QYB" id="ItH-4k-CbH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SYf-Iy-jQI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72.51908396946564" y="37.323943661971832"/>
+        </scene>
+        <!--Tally-->
+        <scene sceneID="iaR-PT-REh">
+            <objects>
+                <viewController id="ZJ7-1G-szV" customClass="TallyViewController" customModule="TallyProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mci-H0-GUS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ieh-f1-hbS">
+                                <rect key="frame" x="0.0" y="75" width="393" height="694"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAI-yC-VmI">
+                                        <rect key="frame" x="163" y="0.0" width="67.333333333333314" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="J3x-x3-gce"/>
+                                        </constraints>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Reset"/>
+                                        <connections>
+                                            <action selector="resetButton:" destination="ZJ7-1G-szV" eventType="touchUpInside" id="xMz-vc-u2h"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VLw-gB-1P1">
+                                        <rect key="frame" x="174" y="313.33333333333331" width="45" height="84.333333333333314"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="70"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hrg-0o-sDP">
+                                        <rect key="frame" x="162.66666666666666" y="505" width="67.666666666666657" height="189"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="tintColor" name="AccentColor"/>
+                                <gestureRecognizers/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G4R-rS-97D"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="G4R-rS-97D" firstAttribute="bottom" secondItem="Ieh-f1-hbS" secondAttribute="bottom" id="ONn-CQ-LMb"/>
+                            <constraint firstItem="G4R-rS-97D" firstAttribute="trailing" secondItem="Ieh-f1-hbS" secondAttribute="trailing" id="bX8-fC-bav"/>
+                            <constraint firstItem="Ieh-f1-hbS" firstAttribute="top" secondItem="G4R-rS-97D" secondAttribute="top" constant="16" id="gie-4f-RXq"/>
+                            <constraint firstItem="Ieh-f1-hbS" firstAttribute="leading" secondItem="G4R-rS-97D" secondAttribute="leading" id="wNp-Ap-vRS"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="qNQ-Lk-EPY" appends="YES" id="5aV-W1-IvJ"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tally" image="number.circle.fill" catalog="system" id="K17-Cb-YvV"/>
+                    <connections>
+                        <outlet property="tallyCount" destination="VLw-gB-1P1" id="I8N-c4-b5k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Bv-C2-Wos" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="qNQ-Lk-EPY">
+                    <connections>
+                        <action selector="incrementButton:" destination="ZJ7-1G-szV" id="uAc-gQ-wVU"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="72.51908396946564" y="-629.57746478873241"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8Id-oy-6Ef">
+            <objects>
+                <tabBarController id="MwC-R3-5xc" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1xM-eA-Stg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemGray2Color"/>
+                        <color key="selectedImageTintColor" systemColor="systemIndigoColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ZJ7-1G-szV" kind="relationship" relationship="viewControllers" id="qxh-8u-GKx"/>
+                        <segue destination="mCo-RK-ODL" kind="relationship" relationship="viewControllers" id="lBg-km-WWF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qdz-nh-EZK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-832" y="-325"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" name="AccentColor"/>
+    <resources>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
+        <image name="number.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="AccentColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
